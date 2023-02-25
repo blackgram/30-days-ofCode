@@ -1,5 +1,5 @@
 // For recieving input from browser
-
+function repeat(){dayOne()}
 const dayOne = () => {
     const value = window.prompt("Enter a Number:");
     num = parseInt(value)
@@ -10,8 +10,11 @@ const dayOne = () => {
     }
 
    return alert(`The factorial of ${num} is ${factorial}`);
+   repeat()
 }
 dayOne()
+
+
 
 
 // For recieving input from node.js console or terminal
