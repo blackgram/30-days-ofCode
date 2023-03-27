@@ -1,7 +1,12 @@
 
 
-const sortAS = (array) => (
-    array.sort((a,b)=>(a-b))
-);
+const sortAS = (array) => {
+    const first = array.sort()
+    let check = typeof first == 'string' ? first : first.sort((a,b)=>(a-b)) 
 
-console.log(sortAS([5,3,6,8,3,1,4,7,8]))
+    return check
+};
+
+console.log(sortAS(["b", "as",'p','eyfey']))
+
+console.log(sortAS([7,32,54,2,5,45,23,8,75]))
